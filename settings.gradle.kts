@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "Reuzable"
 include(":app")
 include(":core-ui")
+include(":core-media-date")

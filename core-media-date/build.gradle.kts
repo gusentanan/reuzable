@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.bagusmerta.core_ui"
+    namespace = "com.bagusmerta.core_media_date"
     compileSdk = ConfigData.compileSdk
 
     defaultConfig {
@@ -29,7 +29,7 @@ android {
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_18
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
         jvmTarget = "11"
@@ -37,8 +37,5 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
-    implementation(libs.glide)
-
 }
