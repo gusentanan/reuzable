@@ -1,3 +1,5 @@
+import com.bagusmerta.reuzable.ConfigData
+
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     id(libs.plugins.android.application.get().pluginId)
@@ -6,14 +8,14 @@ plugins {
 
 android {
     namespace = "com.bagusmerta.reuzable"
-    compileSdk = 33
+    compileSdk = ConfigData.compileSdk
 
     defaultConfig {
         applicationId = "com.bagusmerta.reuzable"
-        minSdk = 27
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = ConfigData.minSdk
+        targetSdk = ConfigData.targetSdk
+        versionCode = ConfigData.versionCode
+        versionName = ConfigData.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

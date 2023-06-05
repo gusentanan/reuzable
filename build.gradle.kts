@@ -1,3 +1,5 @@
+import com.bagusmerta.reuzable.ConfigData
+
 buildscript {
     repositories {
         google()
@@ -13,9 +15,9 @@ buildscript {
 }
 
 allprojects {
-    extensions.extraProperties.set("minSdk", 21)
-    extensions.extraProperties.set("targetSdk", 32)
-    extensions.extraProperties.set("compileSdk", 32)
+    extensions.extraProperties.set("minSdk", ConfigData.minSdk)
+    extensions.extraProperties.set("targetSdk", ConfigData.targetSdk)
+    extensions.extraProperties.set("compileSdk", ConfigData.compileSdk)
     extensions.extraProperties.set("buildToolsVersion", "32.0.0")
 }
 

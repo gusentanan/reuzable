@@ -1,0 +1,1 @@
+D:\playground\android\Reuzable\buildSrc\build\classes\kotlin\main\com\bagusmerta\reuzable\ConfigData.class
